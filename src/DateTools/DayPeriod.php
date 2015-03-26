@@ -1,8 +1,6 @@
 <?php
 
-
 namespace DateTools;
-
 
 class DayPeriod extends DatePeriodBase
 {

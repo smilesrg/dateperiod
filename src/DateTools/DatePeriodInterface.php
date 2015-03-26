@@ -7,6 +7,17 @@ namespace DateTools;
  */
 interface DatePeriodInterface
 {
+    /**
+     * Returns start date of period.
+     *
+     * @return \DateTime
+     */
     public function getStart();
+
+    /**
+     * Returns end date of period.
+     *
+     * @return \DateTime
+     */
     public function getEnd();
 }
