@@ -1,6 +1,6 @@
 <?php
 
-namespace DateTools;
+namespace DatePeriod;
 
 /**
  * Returns start and end date of a period.
@@ -12,12 +12,12 @@ interface DatePeriodInterface
      *
      * @return \DateTime
      */
-    public function getStart();
+    public function getStartDate();
 
     /**
      * Returns end date of period.
      *
      * @return \DateTime
      */
-    public function getEnd();
+    public function getEndDate();
 }

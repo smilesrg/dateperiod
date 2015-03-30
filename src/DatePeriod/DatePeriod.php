@@ -1,6 +1,6 @@
 <?php
 
-namespace DateTools;
+namespace DatePeriod;
 
 /**
  * Class that can return start and end date of a various period.
@@ -8,21 +8,21 @@ namespace DateTools;
 class DatePeriod implements DatePeriodInterface
 {
     /** @var  \DateTime */
-    protected $start;
+    protected $startDate;
 
     /** @var  \DateTime */
-    protected $end;
+    protected $endDate;
 
     /**
      * Default constructor.
      *
-     * @param \DateTime $start Start date.
-     * @param \DateTime $end End date.
+     * @param \DateTime $startDate Start date.
+     * @param \DateTime $endDate End date.
      */
-    public function __construct(\DateTime $start, \DateTime $end)
+    public function __construct(\DateTime $startDate, \DateTime $endDate)
     {
-        $this->start = $start;
-        $this->end = $end;
+        $this->startDate = $startDate;
+        $this->endDate = $endDate;
     }
 
     /**
@@ -30,9 +30,9 @@ class DatePeriod implements DatePeriodInterface
      *
      * @return \DateTime Start date.
      */
-    public function getStart()
+    public function getStartDate()
     {
-        return clone($this->start);
+        return clone($this->startDate);
     }
 
     /**
@@ -40,8 +40,8 @@ class DatePeriod implements DatePeriodInterface
      *
      * @return \DateTime End date.
      */
-    public function getEnd()
+    public function getEndDate()
     {
-        return clone($this->end);
+        return clone($this->endDate);
     }
 }

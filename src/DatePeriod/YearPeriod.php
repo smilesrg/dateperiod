@@ -1,6 +1,6 @@
 <?php
 
-namespace DateTools;
+namespace DatePeriod;
 
 class YearPeriod extends DatePeriodBase
 {
